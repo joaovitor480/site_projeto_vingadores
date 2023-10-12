@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 1.0rem;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+h2{
+    color: #ebebeb;
+    margin-bottom: 32px;
+    margin-left: 4px;
+    border-left: 4px solid#8f0909;
+    padding-left: 8px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+header img{
+    width: 120px;
+}
+
+header {
+    padding: 8px 16px;
+    width: 100%;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    row-gap: 8px;
+    column-gap: 24px;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+}
+
+.menu li + li{
+    /*<tag> + <tag> inclui se existir a mesma teg antes*/
+    margin-left: 30px;
+}
+
+a{
+    white-space: nowrap;
+    padding: 2px 0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header li a{
+    color: #ebebeb;
+}
+
+li a:hover,li a:focus{
+    color: #8f0909;
+    border-bottom: 1px solid #8f0909;
+}
+
+.hero{
+    height: 420px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-content{
+    display: flex;
+    width: 300%;
+    height: 100%;
+}
+
+.hero-content input{
+    display: none;
+}
+
+.slide{
+    width: 33.33%;
+    position: relative;
+}
+
+
+
+.slide img{
+    width: 100vw;
+}
+
+.manual-navegation{
+    position: absolute;
+    margin-top: 360px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-bnt{
+    border: 3px solid #911515;
+    padding: 8px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.manual-bnt:hover{
+    background-color: #8f0909;
+}
+
+.manual-bnt:not(:last-child){
+    margin-right: 15px;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -33.33%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -66.66%;
+}
+
+#radio1:checked ~ .manual-navegation .manual-bnt:nth-child(1),
+#radio2:checked ~ .manual-navegation .manual-bnt:nth-child(2),
+#radio3:checked ~ .manual-navegation .manual-bnt:nth-child(3) {
+    background-color: #8f0909;
+    color: #fff;
+}
+
+.head-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    z-index: 1; 
+}
+
+.hero h1{
+    text-align: center;
+    font-size: 36px;
+    color: #8f0909;
+    padding: 4px 8px;
+}
+
+.hero h1::after{
+    content: "";
+    width: 220px;
+    height: 4px;
+    background: currentColor;
+    display: block;
+    margin: 0 auto;
+}
+
+.gallery{
+    background-color: rgb(13, 13, 66);
+    padding: 64px 35px 96px;
+}
+
+.gallery-row{
+    gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-row figure{
+    /*flex-grows flex-shrink flex-basis*/
+    flex: 1 1 230px;
+}
+
+.gallery-row figure img{
+    border: 4px solid #8f0909;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.gallery figure figcaption{
+    font-weight: bold;
+    color: #ebebeb;
+}
+
+.history{
+    padding: 92px 24px 0;
+    border-top: 4px solid #8f0909;
+}
+
+.dark{
+    background-color: #111111;
+    color: #ebebeb;
+}
+
+.history .container{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   border-bottom: 2px solid #8f0909;
+   gap: 24px;
+}
+
+.history .container .col{
+    flex: 1 1 350px;
+}
+
+.history .container .col img{
+    width: 100%;
+    display: block;
+}
+
+.history p + p{
+    margin-top: 24px;
+}
+
+.dark-link{
+    color: #8f0909;
+    border-bottom: 1px solid #8f0909;
+}
+
+.dark-link:hover,.dark-link:focus{
+    color: #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+
+footer{
+    padding: 64px 24px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 40px;
+    right: 60px;
+    width: 50px;
+    height: 50px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+i{
+    font-size: 1em;
+    color: #111;
+}
+
+.btn i:hover {
+    transition: .5s;
+    margin-top: -5px;
+}
