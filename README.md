@@ -17,7 +17,7 @@ Os Vingadores, também conhecidos como The Avengers em inglês, são um grupo de
 
 ## Autor
 
-Este projeto foi desenvolvido por Marcelo Pereira como parte de um curso de HTML5 e CSS3. Você pode encontrar o autor no [GitHub]([https://github.com/marcelopoars]).
+Este projeto foi desenvolvido por Marcelo Pereira como parte de um curso de HTML5 e CSS3. Você pode encontrar o autor no [GitHub]((https://github.com/marcelopoars)).
 
 ---
 
